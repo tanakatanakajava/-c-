@@ -1,0 +1,67 @@
+ポインタまとめ
+
+ポインタ変数型  　　　・データ型の後ろに*を付ける
+
+			char* a;  int* b;
+
+			int    → *iptr int型の変数のアドレスを記憶するためのポインタ
+	   		double → *dptr double型の変数のアドレスを記憶するためのポインタ
+	   		float  → *fptr float型の変数のアドレスを記憶するためのポインタ
+	   		char   → *cptr char型の変数のアドレスを記憶するためのポインタ
+			
+
+	  			
+
+変数のアドレス　　　　・＆を使う
+			pointa=&pointa;
+
+			int n=1;
+			int *iptr;
+
+ポインタの指し示す先　・*を使う
+			 
+			*pointa=120;
+			x=*pointa:
+
+#include<stdio.h>
+int main(void)
+{
+	int date=123;
+	int *iptr;
+	
+	
+	iptr=&date;
+	
+	printf("アドレス=%p\n",iptr); /*アドレスを表示
+	printf("値=%d\n",*iptr);　　　/*値を表示
+	
+	return 0;
+
+}
+実行結果
+アドレス=0019FF38
+値=123
+
+#include<stdio.h>
+int main(void)
+{
+	int array[]={1,20,3,4,5};
+	
+	int *iptr=array;
+	
+	
+	printf("%d\n",*(iptr+0)*100);
+	printf("%d\n",*(iptr+1));	
+	printf("%d\n",*(iptr+2));		
+	printf("%d\n",*(iptr+3));		
+	printf("%d\n",*(iptr-1));
+	
+	return 0;
+}
+実行結果
+100
+20
+3
+4
+2772992
+
