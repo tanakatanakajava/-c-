@@ -2,21 +2,23 @@
 int main(void)
 {
 	int date=123;
+	int *p;
 	int *iptr;
 	
 	
 	/* 
-	   int    → *iptr
-	   double → *dptr
-	   float  → *fptr
-	   char   → *cptr
+	   int     *iptr
+	   double  *dptr
+	   float   *fptr
+	   char    *cptr
 	  
 	 */
 	
-	iptr=&date;
+	p=&date;
+	*p=123;
 	
-	printf("アドレス=%p\n",iptr);
-	printf("値=%d\n",*iptr);
+	printf("繧｢繝峨Ξ繧ｹ=%p\n",iptr);
+	printf("窶吝､=%d\n",*p);
 	
 	return 0;
 }
