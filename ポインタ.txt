@@ -10,7 +10,7 @@
 ポインタ変数型  　　　・データ型の後ろに*を付ける
 
 			char* a;  int* b;
-
+		
 			int    → *iptr int型の変数のアドレスを記憶するためのポインタ
 	   		double → *dptr double型の変数のアドレスを記憶するためのポインタ
 	   		float  → *fptr float型の変数のアドレスを記憶するためのポインタ
@@ -24,6 +24,8 @@
 
 			int n=1;
 			int *iptr;
+			printf("%p",&a);
+
 
 ポインタの指し示す先　・*を使う
 			 
